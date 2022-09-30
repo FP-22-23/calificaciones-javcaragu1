@@ -1,3 +1,4 @@
+
 def calcula_nota_cuestionario(aciertos, errores, total_respuestas):
     nota = ((aciertos * 10) / total_respuestas) - ((errores * 10) / (50 - total_respuestas))
     return nota
@@ -6,8 +7,8 @@ def solicita_datos():
     a = int(input("Introduzca el numero de aciertos: "))
     e = int(input("Introduzca el numero de errores: "))
     t_r = int(input("Introduzca el total de respuestas: "))
-
     return a, e, t_r
+
 
 
 
@@ -36,7 +37,7 @@ def calcula_nota_continua(cuestionarios, examenes, proyectos):
 
 
 
-def solicita_cuestionarios():
+def solicita_notas_cuestionarios():
     c1 = float(input("Introduzca la nota del cuestionario 1: "))
     c2 = float(input("Introduzca la nota del cuestionario 2: "))
     c3 = float(input("Introduzca la nota del cuestionario 3: "))
@@ -59,5 +60,6 @@ def solicita_proyectos():
     p2 = float(input("Introduzca la nota del segundo proyecto: "))
 
     return (p1, p2)
+
 
 

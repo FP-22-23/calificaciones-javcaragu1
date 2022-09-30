@@ -1,7 +1,6 @@
 from calificaciones import *
 
 
-
 def test_solicita_datos():
     print("Calculemos la nota de tu cuestionario.")
     a, e, t_r = solicita_datos()
@@ -12,12 +11,9 @@ def test_solicita_datos():
 def test_calcula_nota_cuestionario(a, e, t_r):
     print("Su nota en el cuestionario es: ", calcula_nota_cuestionario(a, e, t_r))
 
-
-
-
 def test_solicita_cuestionarios():
     print("Notas de los cuestionarios.")
-    tupla = solicita_cuestionarios()
+    tupla = solicita_notas_cuestionarios()
     return tupla
 
 
@@ -53,3 +49,5 @@ if __name__ == "__main__":
     test_calcula_nota_cuatrimestre((c[0], c[1], c[2]), e[0], p[0])
     test_calcula_nota_cuatrimestre((c[3], c[4], c[5]), e[1], p[1])
     test_calcula_nota_continua(c, e, p)
+
+
